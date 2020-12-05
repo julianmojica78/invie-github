@@ -11,12 +11,24 @@
         }
         
         img {
-            width: 100%;
+            max-width: 100%;
+            vertical-align: top;
+        }
+        
+        img#responsive {
+            display: none;
+        }
+        
+        @media screen and(max-width: 768px) {
+            img#responsive {
+                display: block;
+            }
         }
     </style>
 </head>
 
 <body>
+    <img src="otroFondo2.jpg" alt="" id="responsive">
     <img src="small-header.png" alt="small-header">
     <img src="hero.jpg" alt="hero">
     <img src="arbol.jpg" alt="hero">
